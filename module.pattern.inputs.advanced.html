@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patrón modular - Avanzado</title>
+</head>
+
+<body>
+    <h1>Patrón modular - Avanzado</h1>
+    <form id="student_form">
+        <label for="">Nombre</label>
+        <input name="student_name" type="text" id="student_name">
+        <br>
+        <label for="">Edad</label>
+        <input name="student_age" type="text" id="student_age">
+        <br>
+        <label for="">Gustos</label>
+        <input name="student_hobbies" type="text" id="student_hobbies">
+        <br>
+        <button type="submit">Agregar a la tabla</button>
+    </form>
+    <form id="student_edit" hidden>
+        <label for="student_id">ID estudiante</label>
+        <input name="student_id" type="text" id="student_id" readonly disabled>
+        <br>
+        <label for="">Nombre</label>
+        <input name="student_edit_name" type="text" id="student_edit_name">
+        <br>
+        <label for="">Edad</label>
+        <input name="student_edit_age" type="text" id="student_edit_age">
+        <br>
+        <label for="">Gustos</label>
+        <input name="student_edit_hobbies" type="text" id="student_edit_hobbies">
+        <br>
+        <button type="submit">Actualizar</button>
+        <button type="button" id="go_back">Agregar Nuevo Estudiante</button>
+    </form>
+    <table>
+        <thead>
+            <th>Nombre</th>
+            <th>Edad</th>
+            <th>Gustos</th>
+            <th>Actualizar</th>
+            <th>Eliminar</th>
+        </thead>
+        <tbody id="students_list"></tbody>
+    </table>
+    <script src="module.pattern.inputs.advanced.js"></script>
+</body>
+
+</html>
